@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  s3-database-app:
+    build: .
+    container_name: s3-database-app
+    tty: true
+    stdin_open: true
+    volumes: 
+      - ./:/app
